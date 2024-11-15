@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.31);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  z-index: 1000;
+  padding: 10px 0px;
+}
+.logo {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+}
+.logoText {
+  margin-left: 10px;
+}
