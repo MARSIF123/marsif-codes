@@ -1,4 +1,5 @@
 import { Spectral } from "next/font/google";
+import { Merienda } from "next/font/google";
 import "./globals.css";
 import { WEBSITE_TITLE } from "@/utils/constants";
 import Header from "@/components/Header/Header";
@@ -9,6 +10,11 @@ const spectral = Spectral({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-spectral",
+});
+const merienda = Merienda({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merienda",
 });
 
 export const metadata = {
@@ -25,7 +31,7 @@ export default function RootLayout({ children }) {
   const themeColors = theme === "light" ? LIGHT_COLORS : DARK_COLORS;
   return (
     <html lang="en" data-color-theme={theme} style={themeColors}>
-      <body className={spectral.variable}>
+      <body className={`${spectral.variable} ${merienda.variable}`}>
         <Header initialTheme={theme} />
         {children}
       </body>

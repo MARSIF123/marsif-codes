@@ -4,14 +4,14 @@ import logoImg from "../../../public/M.png";
 import styles from "./header.module.css";
 import Navbar from "../Navbar/Navbar";
 import { WEBSITE_TITLE } from "../../utils/constants";
+import Link from "next/link";
 
 const Header = ({ initialTheme }) => {
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
-        <Image alt="Logo displaying M" width={48} height={48} src={logoImg} />
-        <h2 className={styles.logoText}>{WEBSITE_TITLE}</h2>
-      </div>
+      <Link href="/" className={styles.logoText}>
+        {WEBSITE_TITLE}
+      </Link>
       <Navbar initialTheme={initialTheme} />
     </div>
   );

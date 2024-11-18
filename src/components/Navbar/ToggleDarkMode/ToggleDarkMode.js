@@ -2,8 +2,9 @@
 import React from "react";
 import styles from "./toggleDarkMode.module.css";
 import Cookie from "js-cookie";
-import { FiSun } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi";
 import { LIGHT_COLORS, DARK_COLORS } from "@/utils/constants";
+import IconButton from "@/components/IconButton/IconButton";
 
 const ToggledarkMode = ({ initialTheme }) => {
   const [theme, setTheme] = React.useState(initialTheme);
@@ -25,9 +26,9 @@ const ToggledarkMode = ({ initialTheme }) => {
     });
   };
   return (
-    <button className={styles.wrapper} onClick={handleClick}>
-      {theme === "light" ? <FiSun size="1.5rem" /> : <FiSun size="1.5rem" />}
-    </button>
+    <IconButton onClick={handleClick}>
+      {theme === "light" ? <FiSun /> : <FiMoon />}
+    </IconButton>
   );
 };
 export default ToggledarkMode;

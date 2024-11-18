@@ -1,0 +1,9 @@
+.button {
+  cursor: pointer;
+  border: none;
+  margin: 2px;
+  background: transparent;
+  z-index: 1000;
+  color: var(--color-text);
+  font-size: 2rem;
+}
