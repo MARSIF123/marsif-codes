@@ -5,6 +5,7 @@ import { WEBSITE_TITLE } from "@/utils/constants";
 import Header from "@/components/Header/Header";
 import { cookies } from "next/headers";
 import { LIGHT_COLORS, DARK_COLORS } from "@/utils/constants";
+import Footer from "@/components/Footer/Footer";
 
 const spectral = Spectral({
   weight: ["400", "700"],
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body className={`${spectral.variable} ${merienda.variable}`}>
         <Header initialTheme={theme} />
         {children}
+        <Footer />
       </body>
     </html>
   );
