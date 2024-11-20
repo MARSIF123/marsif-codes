@@ -1,0 +1,36 @@
+.container {
+  transform: translateX(400px);
+  display: flex;
+  margin: 50px 0px;
+  flex-direction: column;
+}
+.outerBox {
+  display: flex;
+}
+.innerBox {
+  margin: 12px;
+  margin-top: 0px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-text);
+  opacity: 0.8;
+  animation: all 1s ease-in;
+}
+
+.container:hover {
+  .innerBox {
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }
+}
