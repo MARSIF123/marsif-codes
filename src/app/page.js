@@ -2,6 +2,8 @@ import styles from "./page.module.css";
 import Heading from "../components/Heading/Heading";
 import DotBox from "../components/DotBox/DotBox";
 import ProjectGrid from "../components/ProjectsGrid/ProjectsGrid";
+import Skills from "../components/Skills/Skills";
+import LinkButton from "../components/LinkButton/LinkButton";
 
 export default function Home() {
   return (
@@ -14,7 +16,9 @@ export default function Home() {
       <DotBox style={{ transform: "translateX(-400px)" }} />
 
       {/* PROJECTS */}
+      <Heading HeadingTag="h1">Projects</Heading>
       <ProjectGrid />
+      <LinkButton href="/projects">View all Projects</LinkButton>
 
       {/* SKILSS */}
       <Heading HeadingTag="h1">Skills</Heading>
