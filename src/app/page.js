@@ -4,6 +4,7 @@ import DotBox from "../components/DotBox/DotBox";
 import ProjectGrid from "../components/ProjectsGrid/ProjectsGrid";
 import Skills from "../components/Skills/Skills";
 import LinkButton from "../components/LinkButton/LinkButton";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
       <Heading HeadingTag="h1">Skills</Heading>
       <Skills />
       <LinkButton href="/about">Learn more about me</LinkButton>
+
+      {/* CONTACT */}
+      <ContactForm />
     </div>
   );
 }

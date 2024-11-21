@@ -1,11 +1,11 @@
 import { Spectral } from "next/font/google";
 import { Merienda } from "next/font/google";
 import "./globals.css";
-import { WEBSITE_TITLE } from "@/utils/constants";
-import Header from "@/components/Header/Header";
+import { WEBSITE_TITLE } from "../utils/constants";
+import Header from "../components/Header/Header";
 import { cookies } from "next/headers";
 import { LIGHT_COLORS, DARK_COLORS } from "@/utils/constants";
-import Footer from "@/components/Footer/Footer";
+import Footer from "../components/Footer/Footer";
 
 const spectral = Spectral({
   weight: ["400", "700"],
