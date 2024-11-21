@@ -26,6 +26,7 @@
     left: 0;
     bottom: 0;
     background-color: var(--color-primary);
+    opacity: 0.8;
     display: flex;
     align-items: center;
     justify-content: center;

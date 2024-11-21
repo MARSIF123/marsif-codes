@@ -2,7 +2,9 @@ import styles from "./heading.module.css";
 
 function Heading({ children, HeadingTag }) {
   const color =
-    HeadingTag === "h1" ? "var(--color-primary)" : "var(--color-text)";
+    HeadingTag === "h1" || HeadingTag === "h2"
+      ? "var(--color-primary)"
+      : "var(--color-text)";
   const fontWeight = HeadingTag === "h1" ? "bold" : "normal";
   const fontSize =
     HeadingTag === "h1"

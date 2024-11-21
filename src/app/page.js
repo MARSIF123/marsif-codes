@@ -23,6 +23,7 @@ export default function Home() {
       {/* SKILSS */}
       <Heading HeadingTag="h1">Skills</Heading>
       <Skills />
+      <LinkButton href="/about">Learn more about me</LinkButton>
     </div>
   );
 }
