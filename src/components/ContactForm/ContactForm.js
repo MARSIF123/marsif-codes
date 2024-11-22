@@ -13,9 +13,14 @@ const ContactForm = () => {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     console.log({ name, email, message });
+    const formData = new FormData(e.target);
+    const response = await fetch("/api/email", {
+      method: "POST",
+      body: formData,
+    });
   };
 
   return (

@@ -1,3 +1,4 @@
+"use client";
 import Heading from "../Heading/Heading";
 import styles from "./skills.module.css";
 
@@ -40,7 +41,7 @@ export default Skills;
 const DesignIcon = () => {
   return (
     <svg
-      class="svg-inline--fa fa-layer-plus fa-stack-1x has-text-dark"
+      className="svg-inline--fa fa-layer-plus fa-stack-1x has-text-dark"
       aria-hidden="true"
       focusable="false"
       data-prefix="fal"
@@ -61,7 +62,7 @@ const DesignIcon = () => {
 const FrontEndIcon = () => {
   return (
     <svg
-      class="svg-inline--fa fa-square-terminal fa-stack-1x has-text-dark"
+      className="svg-inline--fa fa-square-terminal fa-stack-1x has-text-dark"
       aria-hidden="true"
       focusable="false"
       data-prefix="fal"
@@ -82,7 +83,7 @@ const FrontEndIcon = () => {
 const BackEndIcon = () => {
   return (
     <svg
-      class="svg-inline--fa fa-book fa-stack-1x has-text-dark"
+      className="svg-inline--fa fa-book fa-stack-1x has-text-dark"
       aria-hidden="true"
       focusable="false"
       data-prefix="fal"

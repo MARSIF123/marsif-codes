@@ -1,7 +1,7 @@
+"use client";
 import React from "react";
 import styles from "./footer.module.css";
 import Link from "next/link";
-import { CgWebsite } from "react-icons/cg";
 import { FaLinkedin, FaUpwork } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 

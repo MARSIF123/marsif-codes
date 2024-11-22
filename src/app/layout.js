@@ -6,6 +6,7 @@ import Header from "../components/Header/Header";
 import { cookies } from "next/headers";
 import { LIGHT_COLORS, DARK_COLORS } from "@/utils/constants";
 import Footer from "../components/Footer/Footer";
+import styles from "./page.module.css";
 
 const spectral = Spectral({
   weight: ["400", "700"],
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-color-theme={theme} style={themeColors}>
       <body className={`${spectral.variable} ${merienda.variable}`}>
         <Header initialTheme={theme} />
-        {children}
+        <div className={styles.main}>{children}</div>
         <Footer />
       </body>
     </html>

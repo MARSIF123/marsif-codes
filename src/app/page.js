@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import Heading from "../components/Heading/Heading";
 import DotBox from "../components/DotBox/DotBox";
 import ProjectGrid from "../components/ProjectsGrid/ProjectsGrid";
@@ -8,7 +7,7 @@ import ContactForm from "../components/ContactForm/ContactForm";
 
 export default function Home() {
   return (
-    <div className={styles.main}>
+    <>
       {/* INTRO */}
       <DotBox />
       <Heading HeadingTag="h1">Web Developer</Heading>
@@ -28,6 +27,6 @@ export default function Home() {
 
       {/* CONTACT */}
       <ContactForm />
-    </div>
+    </>
   );
 }
