@@ -24,6 +24,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
+/* Apply custom selection style */
+::selection {
+  background-color: var(--color-selection);
+  
+}
+
+/* Safari compatibility */
+::-moz-selection {
+  background-color: var(--color-selection);
+  
+}
+
 
 @media (max-width: 600px) {
   html {
