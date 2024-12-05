@@ -63,8 +63,8 @@ function Footer() {
           </li>
         </ul>
         <p className={styles.text}>
-          Crafted with 💚 using Next.js - Found it great? Let's create something
-          together.
+          {`Crafted with 💚 using Next.js - Found it great? Let's create something
+          together.`}
         </p>
       </div>
     </div>

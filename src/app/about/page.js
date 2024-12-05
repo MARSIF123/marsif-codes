@@ -30,17 +30,17 @@ export default function About() {
         rewarding. So that's how I got a Computer Science degree.
       </p>
       <p className={styles.para}>
-        Since then, I have honed my skills in modern frameworks like Next.js,
+        {`Since then, I have honed my skills in modern frameworks like Next.js,
         React, and Node.js, alongside tools like Tailwind CSS and TypeScript.
         I’ve worked on diverse projects, from building responsive and accessible
         user interfaces to integrating backend systems seamlessly. I take pride
         in writing clean, efficient, and scalable code that meets both user
-        needs and business goals.
+        needs and business goals.`}
       </p>
 
       <p className={styles.para}>
-        I am pursuing my Master’s in Computer Science at Algoma University,
-        Canada, while working as a freelancer on Upwork.
+       {`I am pursuing my Master’s in Computer Science at Algoma University,
+        Canada, while working as a freelancer on Upwork.`}
       </p>
 
       <LinkButton href="/maryam-resume.pdf" target="_blank">
