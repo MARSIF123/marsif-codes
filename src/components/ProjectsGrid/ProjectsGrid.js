@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./projectGrid.module.css";
 import Heading from "../Heading/Heading";
-import tt1 from "../../assests/tt1.PNG";
-import b1 from "../../assests/b1.PNG";
-import who1 from "../../assests/who1.PNG";
+import tt1 from "../../assets/tt1.png";
+import b1 from "../../assets/b1.png";
+import who1 from "../../assets/who1.png";
 
 const ProjectGrid = () => {
   return (
