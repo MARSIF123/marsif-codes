@@ -14,12 +14,15 @@ export const metadata = {
 export default function BlogProject() {
   return (
     <>
+      {/* INTRO */}
       <Heading HeadingTag="h1">Web Waves</Heading>
       <p>
         I created a personal blog website where I occasionally write as a hobby
         in my free time. The topics I cover range from educational content to
         fun and engaging reads.
       </p>
+
+      {/* ROLE & TECH */}
       <div className={styles.flex}>
         <div className={styles["flex-item"]}>
           <Heading HeadingTag="h2">My Role</Heading>
@@ -38,6 +41,8 @@ export default function BlogProject() {
           </p>
         </div>
       </div>
+
+      {/* MAIN IMAGE */}
       <div className={styles.imageContainer}>
         <Image
           className={styles.img}
@@ -45,8 +50,10 @@ export default function BlogProject() {
           alt="Home page with an elegant and user-friendly design"
           src={b1}
         />
+        <p>Home page with an elegant and user-friendly design</p>
       </div>
-      <p>Home page with an elegant and user-friendly design</p>
+
+      {/* PROCESS */}
       <div>
         <Heading HeadingTag="h2">Proccess</Heading>
         <ul>
@@ -85,6 +92,8 @@ export default function BlogProject() {
           </li>
         </ul>
       </div>
+
+      {/* PAIN POINTS FOUND */}
       <Heading HeadingTag="h2">Pain Points Found</Heading>
       <p>
         Working on this blog was a bit challenging when I had to integrate the
@@ -99,6 +108,8 @@ export default function BlogProject() {
         </Link>
         online, and it was a success.
       </p>
+
+      {/* WHAT I LEARNED */}
       <Heading HeadingTag="h2">What I learned? </Heading>
       <p>
         In this project, I learned how to integrate Sanity.io for real-time
@@ -109,6 +120,8 @@ export default function BlogProject() {
         synchronization helped me enhance my problem-solving abilities.{" "}
         <b>Feel free to take a look at this working app demo:</b>
       </p>
+
+      {/* GITHUB & WEBSITE LINKS */}
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <Link

@@ -17,12 +17,15 @@ export const metadata = {
 export default function TodoListApp() {
   return (
     <>
+      {/* INTRO */}
       <Heading HeadingTag="h1">Task Tactician</Heading>
       <p>
         A task management application for adding, organizing, and tracking
         tasks. Features include marking tasks as important or completed, setting
         due dates, and organizing tasks into groups.
       </p>
+
+      {/* ROLE & TECH */}
       <div className={styles.flex}>
         <div className={styles["flex-item"]}>
           <Heading HeadingTag="h2">My Role</Heading>
@@ -41,6 +44,8 @@ export default function TodoListApp() {
           </p>
         </div>
       </div>
+
+      {/* MAIN IMAGE */}
       <div className={styles.imageContainer}>
         <Image
           className={styles.img}
@@ -48,8 +53,10 @@ export default function TodoListApp() {
           alt="Home page with an elegant and user-friendly design"
           src={tt1}
         />
+        <p>Home page with an elegant and user-friendly design</p>
       </div>
-      <p>Home page with an elegant and user-friendly design</p>
+
+      {/* FEATURE */}
       <div className={styles.flex}>
         <div className={styles["flex-item"]}>
           <Heading HeadingTag="h2">Features</Heading>
@@ -64,6 +71,7 @@ export default function TodoListApp() {
             MongoDB, enables robust task storage, retrieval, and management.
           </p>
         </div>
+
         <div className={styles["flex-item"]}>
           <Heading HeadingTag="h2">More Features</Heading>
           <ul>
@@ -78,6 +86,8 @@ export default function TodoListApp() {
           </ul>
         </div>
       </div>
+
+      {/* 2ND IMAGE */}
       <div className={styles.imageContainer}>
         <Image
           className={styles.img}
@@ -85,8 +95,10 @@ export default function TodoListApp() {
           alt="Login page"
           src={tt2}
         />
+        <p>Login page -- in case new user, leads to registration page</p>
       </div>
-      <p>Login page -- in case new user, leads to registration page</p>
+
+      {/* PAIN POINTS */}
       <Heading HeadingTag="h2">Pain Points Found</Heading>
       <p>
         At first, the fixed sidebar was a big issue for small mobile screens
@@ -95,6 +107,8 @@ export default function TodoListApp() {
         needed. This made the app much easier to use and worked well on all
         screen sizes.
       </p>
+
+      {/* 3RD IMAGE */}
       <div className={styles.imageContainer}>
         <Image
           className={styles.img}
@@ -102,10 +116,14 @@ export default function TodoListApp() {
           alt="Tasks Page"
           src={tt3}
         />
+        <p>Task Management interface</p>
       </div>
-      <p>Task Management interface</p>
-      <Image loading="lazy" alt="Side bar" src={tt4} style={{ margin: 80 }} />
-      <p>Side bar with functionality of searching & filtering tasks</p>
+
+      {/* 4TH IMAGE */}
+      <Image loading="lazy" alt="Side bar" src={tt4} style={{ border: '2px solid var(--color-primary)'}} />
+      <p style={{ marginBottom: 80}} >Side bar with functionality of searching & filtering tasks</p>
+
+      {/* WHAT I LEARNED */}
       <Heading HeadingTag="h2">What I learned? </Heading>
       <p>
         Working on this project taught me how to approach problems with a
@@ -115,6 +133,8 @@ export default function TodoListApp() {
         user feedback, and adapting to challenges to deliver a polished final
         product. <b>Feel free to take a look at this working app demo:</b>
       </p>
+
+      {/* GITHUB & WEBSITE LINK */}
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <Link
