@@ -1,7 +1,7 @@
 import Heading from "@/components/Heading/Heading";
 import Image from "next/image";
 import styles from "../todo-list-app/page.module.css";
-import b1 from "../../../assests/b1.PNG";
+import b1 from "../../../assets/b1.png";
 import { CgWebsite } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { WEBSITE_TITLE } from "../../../utils/constants";

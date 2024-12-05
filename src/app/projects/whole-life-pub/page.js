@@ -1,9 +1,9 @@
 import Heading from "@/components/Heading/Heading";
 import Image from "next/image";
 import styles from "../todo-list-app/page.module.css";
-import who1 from "../../../assests/who1.PNG";
-import who2 from "../../../assests/who2.PNG";
-import who4 from "../../../assests/who4.PNG";
+import who1 from "../../../assets/who1.png";
+import who2 from "../../../assets/who2.png";
+import who4 from "../../../assets/who4.png";
 import { CgWebsite } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { WEBSITE_TITLE } from "../../../utils/constants";

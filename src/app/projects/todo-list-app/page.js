@@ -1,10 +1,10 @@
 import Heading from "@/components/Heading/Heading";
 import Image from "next/image";
 import styles from "./page.module.css";
-import tt1 from "../../../assests/tt1.PNG";
-import tt2 from "../../../assests/tt2.PNG";
-import tt3 from "../../../assests/tt3.PNG";
-import tt4 from "../../../assests/tt4.PNG";
+import tt1 from "../../../assets/tt1.png";
+import tt2 from "../../../assets/tt2.png";
+import tt3 from "../../../assets/tt3.png";
+import tt4 from "../../../assets/tt4.png";
 import { CgWebsite } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { WEBSITE_TITLE } from "../../../utils/constants";
