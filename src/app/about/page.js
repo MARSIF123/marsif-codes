@@ -12,22 +12,22 @@ export default function About() {
     <>
       <Heading HeadingTag="h1">My Story</Heading>
       <p className={styles.para}>
-        Hi, my name is Maryam Wasif, and I am a passionate web developer with
+        {`Hi, my name is Maryam Wasif, and I am a passionate web developer with
         expertise in Next.js and modern web technologies. My journey into
         programming began in 2019 when I wrote my first "Hello, World!" code in
         C++. Before that, computers were just a medium for gaming and digital
         drawing, and I never imagined they would become the foundation of my
-        career.
+        career.`}
       </p>
 
       <p className={styles.para}>
-        Growing up, I was naturally drawn to mathematics because of its logical
+        {`Growing up, I was naturally drawn to mathematics because of its logical
         structure and problem-solving nature. I was set on pursuing mathematics
         as my domain after college. However, my brother, a computer engineer,
         encouraged me to explore computer science. He explained how it not only
         aligns with mathematical concepts but also incorporates creativity,
         innovation, and practical applications in a way that makes it fun and
-        rewarding. So that's how I got a Computer Science degree.
+        rewarding. So that's how I got a Computer Science degree.`}
       </p>
       <p className={styles.para}>
         {`Since then, I have honed my skills in modern frameworks like Next.js,
