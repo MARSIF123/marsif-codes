@@ -1,10 +1,9 @@
 import Heading from "@/components/Heading/Heading";
 import Image from "next/image";
 import styles from "../todo-list-app/page.module.css";
-import who1 from "../../../../public/who1.PNG";
-import who2 from "../../../../public/who2.PNG";
-import who3 from "../../../../public/who3.PNG";
-import who4 from "../../../../public/who4.PNG";
+import who1 from "../../../assests/who1.PNG";
+import who2 from "../../../assests/who2.PNG";
+import who4 from "../../../assests/who4.PNG";
 import { CgWebsite } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { WEBSITE_TITLE } from "../../../utils/constants";
@@ -19,6 +18,7 @@ export const metadata = {
 export default function WholeLifePub() {
   return (
     <>
+      {/* INTRO */}
       <Heading HeadingTag="h1">WholeLifePub</Heading>
       <p>
         Inspired by The Art of Manliness, I recreated its design to sharpen my
@@ -26,6 +26,8 @@ export default function WholeLifePub() {
         full-stack blog app using Next.js and DatoCMS, combining a clean,
         responsive design with dynamic content management.
       </p>
+
+      {/* ROLE & TECH */}
       <div className={styles.flex}>
         <div className={styles["flex-item"]}>
           <Heading HeadingTag="h2">My Role</Heading>
@@ -44,6 +46,8 @@ export default function WholeLifePub() {
           </p>
         </div>
       </div>
+
+      {/* MAIN IMAGE */}
       <div className={styles.imageContainer}>
         <Image
           className={styles.img}
@@ -51,8 +55,10 @@ export default function WholeLifePub() {
           alt="Home page with an elegant and user-friendly design"
           src={who1}
         />
-      <p>Home page with an elegant and user-friendly design</p>
+        <p>Home page with an elegant and user-friendly design</p>
       </div>
+
+      {/* PROCESS */}
       <div>
         <Heading HeadingTag="h2">Proccess</Heading>
         <p>
@@ -64,6 +70,8 @@ export default function WholeLifePub() {
           running reliably.
         </p>
       </div>
+
+      {/* 2ND IMAGE */}
       <div className={styles.imageContainer}>
         <Image
           className={styles.img}
@@ -74,6 +82,7 @@ export default function WholeLifePub() {
         <p>Post View Page</p>
       </div>
 
+      {/* 3RD IMAGE */}
       <div className={styles.imageContainer}>
         <Image
           className={styles.img}
@@ -84,6 +93,7 @@ export default function WholeLifePub() {
         <p>Related posts section underneath the full post</p>
       </div>
 
+      {/* WHAT I LEARNED */}
       <Heading HeadingTag="h2">What I learned? </Heading>
       <p>
         Working with DatoCMS was both fun and easy, and I picked up some great
@@ -97,6 +107,8 @@ export default function WholeLifePub() {
         project really helped me grow as a full-stack developer!{" "}
         <b>Feel free to take a look at this working app demo:</b>
       </p>
+
+      {/* LINKS */}
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <Link

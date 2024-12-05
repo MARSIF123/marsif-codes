@@ -1,10 +1,10 @@
 import Heading from "@/components/Heading/Heading";
 import Image from "next/image";
 import styles from "./page.module.css";
-import tt1 from "../../../../public/tt1.PNG";
-import tt2 from "../../../../public/tt2.PNG";
-import tt3 from "../../../../public/tt3.PNG";
-import tt4 from "../../../../public/tt4.PNG";
+import tt1 from "../../../assests/tt1.PNG";
+import tt2 from "../../../assests/tt2.PNG";
+import tt3 from "../../../assests/tt3.PNG";
+import tt4 from "../../../assests/tt4.PNG";
 import { CgWebsite } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { WEBSITE_TITLE } from "../../../utils/constants";
@@ -120,8 +120,15 @@ export default function TodoListApp() {
       </div>
 
       {/* 4TH IMAGE */}
-      <Image loading="lazy" alt="Side bar" src={tt4} style={{ border: '2px solid var(--color-primary)'}} />
-      <p style={{ marginBottom: 80}} >Side bar with functionality of searching & filtering tasks</p>
+      <Image
+        loading="lazy"
+        alt="Side bar"
+        src={tt4}
+        style={{ border: "2px solid var(--color-primary)" }}
+      />
+      <p style={{ marginBottom: 80 }}>
+        Side bar with functionality of searching & filtering tasks
+      </p>
 
       {/* WHAT I LEARNED */}
       <Heading HeadingTag="h2">What I learned? </Heading>

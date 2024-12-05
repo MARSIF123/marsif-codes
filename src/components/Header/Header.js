@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import logoImg from "../../../public/M.png";
 import styles from "./header.module.css";
 import Navbar from "../Navbar/Navbar";
 import { WEBSITE_TITLE } from "../../utils/constants";
