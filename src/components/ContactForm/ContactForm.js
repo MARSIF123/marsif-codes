@@ -1,4 +1,5 @@
 "use client";
+import { sendEmail } from "@/utils/send-email";
 import Heading from "../Heading/Heading";
 import styles from "./contactForm.module.css";
 import React from "react";
@@ -16,11 +17,12 @@ const ContactForm = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log({ name, email, message });
-    const formData = new FormData(e.target);
-    const response = await fetch("/api/email", {
-      method: "POST",
-      body: formData,
-    });
+    const jsonData = {
+      name,
+      email,
+      message,
+    };
+    sendEmail(jsonData);
   };
 
   return (
@@ -31,6 +33,7 @@ const ContactForm = () => {
         <input
           id={nameId}
           value={name}
+          name="name"
           onChange={(e) => setName(e.target.value)}
           aria-label="Your Name"
           required
@@ -40,6 +43,7 @@ const ContactForm = () => {
         <input
           id={emailId}
           type="email"
+          name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           aria-label="Your Email"
@@ -50,6 +54,7 @@ const ContactForm = () => {
         <textarea
           id={messageId}
           value={message}
+          name="message"
           maxLength={300}
           draggable={false}
           onChange={(e) => setMessage(e.target.value)}
