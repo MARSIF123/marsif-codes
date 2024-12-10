@@ -13,6 +13,8 @@ const ContactForm = () => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [res, setRes] = React.useState("");
+
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -22,7 +24,8 @@ const ContactForm = () => {
       email,
       message,
     };
-    sendEmail(jsonData);
+    await sendEmail(jsonData);
+    
   };
 
   return (
